@@ -25,13 +25,8 @@ const DEFAULT_DIFFICULTY_TOOLTIP_TITLE_UKRAINIAN =
   "звичайний режим генерує випадкові слова з 1000 в українському наборі даних.";
 const HARD_DIFFICULTY_TOOLTIP_TITLE_UKRAINIAN =
   "звичайний режим генерує випадкові слова, які рідше зустрічаються.";
-
-const GITHUB_TOOLTIP_TITLE =
-  "Dear visitors: \n For feature requests or bug reports, please submit an issue to the github repo. \n Welcome contributing with a fork. \n If you like my works, please star the project. \n Thanks! \n";
 const CONTACT_TOOLTIP_TITLE =
   "Ви можете зв'язатись з автором у Telegram: \n";
-const AUTHOR = "author: @Muyang Guo\n";
-const GITHUB_REPO_LINK = "project: @Github\n";
 
 const FOCUS_MODE = "Режим фокусу";
 
@@ -76,7 +71,6 @@ export {
   HARD_DIFFICULTY_TOOLTIP_TITLE,
   CHAR_TOOLTIP_TITLE,
   SENTENCE_CHAR_TOOLTIP_TITLE,
-  GITHUB_TOOLTIP_TITLE,
   CONTACT_TOOLTIP_TITLE,
   FOCUS_MODE,
   MUSIC_MODE,
@@ -99,8 +93,6 @@ export {
   FIFTEEN_SENTENCES_COUNT,
   ENGLISH_SENTENCE_MODE_TOOLTIP_TITLE,
   UKRAINIAN_SENTENCE_MODE_TOOLTIP_TITLE,
-  AUTHOR,
-  GITHUB_REPO_LINK,
   TRAINER_MODE,
   RESTART_BUTTON_TOOLTIP_TITLE_WORDSCARD,
   SELECT_ONE_OR_MORE_CHAPTERS,

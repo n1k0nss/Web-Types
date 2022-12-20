@@ -15,15 +15,8 @@ import {
   GAME_MODE_DEFAULT,
   GAME_MODE_SENTENCE,
   TRAINER_MODE,
-  // WORDS_CARD_MODE
 } from "../../constants/Constants";
-import { Link } from "@mui/material";
 import SupportMe from "../features/SupportMe";
-import {
-  GITHUB_TOOLTIP_TITLE,
-  AUTHOR,
-  GITHUB_REPO_LINK,
-} from "../../constants/Constants";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import KeyboardAltIcon from "@mui/icons-material/KeyboardAlt";
 import MusicNoteIcon from "@mui/icons-material/MusicNote";
@@ -31,7 +24,6 @@ import EmojiFoodBeverageIcon from "@mui/icons-material/EmojiFoodBeverage";
 import { ReactComponent as DiscordIcon } from "../../assets/Icons/discord.svg";
 import { SvgIcon } from "@mui/material";
 import KeyboardAltOutlinedIcon from '@mui/icons-material/KeyboardAltOutlined';
-// import SchoolIcon from '@mui/icons-material/School';
 import { SOUND_MODE_TOOLTIP } from "../features/sound/sound";
 
 const FooterMenu = ({
@@ -54,7 +46,6 @@ const FooterMenu = ({
   isTrainerMode,
   toggleTrainerMode,
   isWordsCardMode,
-  // toggleWordsCardMode
 }) => {
   const isSiteInfoDisabled = isMusicMode || isFocusedMode;
   const isBottomLogoEnabled = isFocusedMode && !isMusicMode;
@@ -111,17 +102,6 @@ const FooterMenu = ({
             onChange={handleSoundTypeChange}
             menuPlacement="top"
           ></Select>)}
-          {/* <IconButton onClick={toggleWordsCardMode}>
-            <Tooltip
-              title={
-                <span style={{ whiteSpace: "pre-line" }}>{WORDS_CARD_MODE}</span>
-              }
-            >
-              <span className={getModeButtonClassName(isWordsCardMode)}>
-                <SchoolIcon fontSize="medium"></SchoolIcon>
-              </span>
-            </Tooltip>
-          </IconButton> */}
           <IconButton onClick={toggleCoffeeMode}>
             <Tooltip
               title={
@@ -183,33 +163,12 @@ const FooterMenu = ({
         {!isSiteInfoDisabled && (
           <Box display="block" flexDirection="row">
             <SupportMe></SupportMe>
-            <Tooltip
-              title={
-                <span style={{ whiteSpace: "pre-line", fontSize:"12px" }}>
-                  {GITHUB_TOOLTIP_TITLE}
-                    <Link
-                      margin="inherit"
-                      href="https://muyangguo.xyz"
-                    >
-                      {AUTHOR}
-                    </Link>
-                    <Link
-                      margin="inherit"
-                      href="https://github.com/gamer-ai/eletype-frontend/"
-                    >
-                      {GITHUB_REPO_LINK}
-                    </Link>
-                </span>
-              }
-              placement="top-start"
-            >
               <IconButton
-                href="https://github.com/gamer-ai/eletype-frontend/"
+                href="https://github.com/n1k0nss/Web-Types"
                 color="inherit"
               >
                 <GitHubIcon></GitHubIcon>
               </IconButton>
-            </Tooltip>
             <Tooltip
               title={
                 <span style={{ whiteSpace: "pre-line" }}>
