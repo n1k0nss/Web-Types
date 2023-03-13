@@ -86,17 +86,7 @@ const heroTheme = {
   fontFamily: "sans-serif",
 };
 
-const budapestTheme = {
-  label: "Budapest",
-  background:
-    "linear-gradient(to right, #d48fa2,#d48fa2 15%,#74647f 15%, #74647f 85%,#d48fa2 85%);",
-  text: "#b1b7cd",
-  gradient: "linear-gradient(90deg, 	#d48fa2 0%, #74647f 100%)",
-  title: "#647e99",
-  textTypeBox: "#ecca9c",
-  stats: "#be9198",
-  fontFamily: "sans-serif",
-};
+
 
 const eva01Theme = {
   label: "EVA-01",
@@ -172,7 +162,6 @@ const themesOptions = [
   { value: arakiNobuyoshiTheme, label: "Araki Nobuyoshi" },
   { value: heroTheme, label: "Hero" },
   { value: coolKidTheme, label: "Cool Kid" },
-  { value: budapestTheme, label: "Budapest" },
   { value: lightTheme, label: "Light" }
 ];
 
@@ -187,7 +176,6 @@ export {
   arakiNobuyoshiTheme,
   heroTheme,
   coolKidTheme,
-  budapestTheme,
   aluminiumTheme,
   pianoTheme,
   defaultTheme,
