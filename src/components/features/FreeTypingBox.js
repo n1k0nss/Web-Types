@@ -37,7 +37,7 @@ const FreeTypingBox = ({ spaces = 4, textAreaRef, soundMode, soundType }) => {
   };
 
   return (
-    <div className="novelty-container">
+    <main className="novelty-container">
       <textarea
         onChange={handleText}
         onKeyDown={handleTab}
@@ -47,7 +47,7 @@ const FreeTypingBox = ({ spaces = 4, textAreaRef, soundMode, soundType }) => {
         spellCheck="false"
         placeholder=" ... "
       />
-    </div>
+    </main>
   );
 };
 

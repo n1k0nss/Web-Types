@@ -66,7 +66,7 @@ const FooterMenu = ({
   };
 
   return (
-    <div className="footer">
+    <footer className="footer">
       <Grid container justifyContent="space-between" alignItems="center">
         <Box display="flex" flexDirection="row">
           <Select
@@ -206,7 +206,7 @@ const FooterMenu = ({
           </Box>
         )}
       </Grid>
-    </div>
+    </footer>
   );
 };
 

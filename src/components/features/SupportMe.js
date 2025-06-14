@@ -9,7 +9,7 @@ const SupportMe = () => {
   return (
     <Tooltip
       title={
-        <div>
+        <article>
           <span style={{ whiteSpace: "pre-line", fontSize:"12px"}}>
             {CONTACT_TOOLTIP_TITLE}
           </span>
@@ -18,7 +18,7 @@ const SupportMe = () => {
             src={TelegramQRCode}
             alt="TelegramQRCode"
           />
-        </div>
+        </article>
       }
       placement="top-start"
     >

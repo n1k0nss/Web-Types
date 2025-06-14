@@ -586,7 +586,7 @@ const TypeBox = ({
   };
 
   return (
-    <div onClick={handleInputFocus}>
+    <main onClick={handleInputFocus}>
       <CapsLockSnackbar open={capsLocked}></CapsLockSnackbar>
       {language === ENGLISH_MODE && (
         <div className="type-box">
@@ -857,7 +857,7 @@ const TypeBox = ({
           <span className="key-note">щоб вийти</span>
         </DialogTitle>
       </Dialog>
-    </div>
+    </main>
   );
 };
 

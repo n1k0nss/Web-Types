@@ -278,8 +278,8 @@ const SentenceBox = ({
   };
 
   return (
-    <div onClick={handleInputFocus}>
-      <div className="type-box-sentence">
+    <main onClick={handleInputFocus}>
+      <section className="type-box-sentence">
         <Stack spacing={2}>
           <div className="sentence-display-field">
             {currSentence.split("").map((char, idx) => (
@@ -306,8 +306,8 @@ const SentenceBox = ({
             </span>
           )}
         </Stack>
-      </div>
-      <div className="stats">
+      </section>
+      <section className="stats">
         <SentenceBoxStats
           countDown={time}
           wpm={wpm}
@@ -419,7 +419,7 @@ const SentenceBox = ({
             </Box>
           </Grid>
         </div>
-      </div>
+      </section>
       <Dialog
         PaperProps={{
           style: {
@@ -448,7 +448,7 @@ const SentenceBox = ({
           <span className="key-note">щоб вийти</span>
         </DialogTitle>
       </Dialog>
-    </div>
+    </main>
   );
 };
 

@@ -93,8 +93,8 @@ const DefaultKeyboard = ({soundType, soundMode}) => {
   };
 
   return (
-    <div>
-      <div className="keyboard">
+    <main>
+      <section className="keyboard">
         <input
           className="hidden-input"
           onBlur={handleInputBlur}
@@ -198,8 +198,8 @@ const DefaultKeyboard = ({soundType, soundMode}) => {
             SPACE
           </div>
         </ul>{" "}
-      </div>
-      <div className="keyboard-stats">
+      </section>
+      <section className="keyboard-stats">
         <Box display="flex" flexDirection="row">
           <h3>Точність: {accuracy} %</h3>
           <h3>
@@ -217,8 +217,8 @@ const DefaultKeyboard = ({soundType, soundMode}) => {
             <RestartAltIcon />
           </IconButton>
         </Box>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 
