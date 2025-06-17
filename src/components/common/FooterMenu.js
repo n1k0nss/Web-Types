@@ -164,7 +164,7 @@ const FooterMenu = ({
           <Box display="block" flexDirection="row">
             <SupportMe></SupportMe>
               <IconButton
-                href="https://github.com/n1k0nss/Web-Types"
+                href="https://github.com/n1k0nss"
                 color="inherit"
               >
                 <GitHubIcon></GitHubIcon>
@@ -196,7 +196,7 @@ const FooterMenu = ({
         {isBottomLogoEnabled && (
           <Box display="block" flexDirection="row" className="bottom-info">
             <IconButton
-              href="https://github.com/gamer-ai/eletype-frontend/"
+              href="https://github.com/n1k0nss"
               color="inherit"
             >
               <span>

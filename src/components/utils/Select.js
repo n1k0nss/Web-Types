@@ -34,7 +34,9 @@ export default styled(Select)`
     border: 1px solid ${({ theme }) => theme.text};
     font-size: 12px;
   }
-
+  .Select__menu-list {
+    overflow-x: hidden;
+  }
   .Select__menu-list::-webkit-scrollbar {
     width: 6px;
   }
