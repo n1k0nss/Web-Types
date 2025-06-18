@@ -589,7 +589,7 @@ const TypeBox = ({
     <main onClick={handleInputFocus}>
       <CapsLockSnackbar open={capsLocked}></CapsLockSnackbar>
       {language === ENGLISH_MODE && (
-        <div className="type-box">
+        <section className="type-box">
           <div className="words">
             {words.map((word, i) => (
               <span
@@ -609,10 +609,10 @@ const TypeBox = ({
               </span>
             ))}
           </div>
-        </div>
+        </section>
       )}
       {language === UKRAINIAN_MODE && (
-        <div className="type-box">
+        <section className="type-box">
         <div className="words">
           {words.map((word, i) => (
             <span
@@ -632,9 +632,9 @@ const TypeBox = ({
             </span>
           ))}
         </div>
-      </div>
+      </section>
       )}
-      <div className="stats">
+      <section className="stats">
         <Stats
           status={status}
           wpm={wpm}
@@ -818,7 +818,7 @@ const TypeBox = ({
             )}
           </Grid>
         </div>
-      </div>
+      </section>
       <input
         key="hidden-input"
         ref={textInputRef}
