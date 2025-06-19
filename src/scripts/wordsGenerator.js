@@ -2,6 +2,7 @@ import randomWords from "random-words";
 import {
   COMMON_WORDS,
   COMMON_UKRAINIAN_WORDS,
+  DEFAULT_UKRAINIAN_WORDS,
   // COMMON_CHINESE_IDIOMS_WORDS,
 } from "../constants/WordsMostCommon";
 import {
@@ -38,9 +39,9 @@ const chineseWordsGenerator = ( difficulty, languageMode) => {
     if (difficulty === DEFAULT_DIFFICULTY){
       const ChineseWordList = [];
       for (let i = 0; i < DEFAULT_WORDS_COUNT; i++) {
-        const rand = randomIntFromRange(0, 962);
-        if (COMMON_UKRAINIAN_WORDS[rand] && COMMON_UKRAINIAN_WORDS[rand].val){
-          ChineseWordList.push(COMMON_UKRAINIAN_WORDS[rand]);
+        const rand = randomIntFromRange(0, 219);
+        if (DEFAULT_UKRAINIAN_WORDS[rand] && DEFAULT_UKRAINIAN_WORDS[rand].val){
+          ChineseWordList.push(DEFAULT_UKRAINIAN_WORDS[rand]);
         }
       }
   
